@@ -6,7 +6,7 @@ class Header extends Component {
     return (
       <div>
         <header>
-          <h1>The Shoppies</h1>
+          <h1>🌟 The Shoppies 🌟</h1>
           <p>Nominate Your Favourite Movies For This Year!</p>
         </header>
       </div>
