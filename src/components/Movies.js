@@ -18,7 +18,7 @@ class Movies extends Component {
 
   getMovie(value) {
     axios({
-      url: 'http://www.omdbapi.com/',
+      url: 'https://www.omdbapi.com/',
       params: {
         apikey: '4a9419c3',
         type: 'movie',
