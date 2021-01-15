@@ -1,15 +1,16 @@
 .movies-list::-webkit-scrollbar {
-  height: 12px;
+  height: 25px;
 }
 
 .movies-list::-webkit-scrollbar-track {
-  background: white;
+  background: ghostwhite;
+  border-radius: 20px;
 }
 
 .movies-list::-webkit-scrollbar-thumb {
-  background-color: rgba(128, 128, 128, 0.4);
+  background-color: rgba(128, 128, 128, 0.3);
   border-radius: 20px;
-  border: 3px solid white;
+  border: 3px solid ghostwhite;
 }
 
 body {
