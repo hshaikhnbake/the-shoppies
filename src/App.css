@@ -4,13 +4,15 @@
 
 .movies-list::-webkit-scrollbar-track {
   background: ghostwhite;
-  border-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
 }
 
 .movies-list::-webkit-scrollbar-thumb {
   background-color: rgba(128, 128, 128, 0.3);
-  border-radius: 20px;
-  border: 3px solid ghostwhite;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border: 5px solid ghostwhite;
 }
 
 body {
