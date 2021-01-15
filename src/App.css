@@ -157,14 +157,6 @@ button:disabled:hover {
     align-items: center;
   }
 
-  .movies-list {
-  height: 450px
-  }
-
-  .movies {
-    height: 400px;
-  }
-
   button.search{
 
     width: 90%;
