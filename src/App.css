@@ -1,38 +1,173 @@
-.App {
+.movies-list::-webkit-scrollbar {
+  height: 12px;
+}
+
+.movies-list::-webkit-scrollbar-track {
+  background: white;
+}
+
+.movies-list::-webkit-scrollbar-thumb {
+  background-color: rgba(128, 128, 128, 0.4);
+  border-radius: 20px;
+  border: 3px solid white;
+}
+
+body {
+  background: white;
+  color: #141414;
+}
+
+.wrapper {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+h2 {
+  font-size: 2.3rem;
+  margin-top: 60px;
+  margin-left: 20px;
+}
+
+header {
   text-align: center;
+  padding: 40px 0px;
+  color: whitesmoke;
+  background: purple;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+input {
+  width: calc(60% - 40px);
+  padding: 20px;
+  border: none;
+  border-radius:0.12em;
+  box-shadow: 5px 0 30px 1px rgba(0, 0, 0, 0.31);
+  margin: 20px 0;
+}
+label {
+  display: flex;
+  justify-content: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+button {
+  padding:0.35em 1.2em;
+  margin:0 0.3em 0.3em 0;
+  border-radius:0.12em;
+  display: inline-block;
+  display:inline-block;
+  text-decoration:none;
+  text-align:center;
+  border: none;
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+button.search{
+  margin: 0 10px;
+  width: calc(30% - 20px);
+  transition: all 0.2s;
+  margin: 20px 10px;
+}
+
+button.search:hover,
+button.search:focus {
+  color: whitesmoke;
+  background-color: #6431c6
+}
+.movies-list-container {
+    margin: 60px 0;
+
+}
+.movies-list {
+  display: flex;
+  margin: 0 20px;
+  overflow-x: auto;
+  align-items: center;
+  box-shadow: 15px 0 40px 1px rgba(0, 0, 0, 0.11);
+  border-radius: 20px;
+  height: 550px;
+
+}
+
+.movies-list:hover {
+  cursor: grab;
+}
+
+.movies-list:active {
+  cursor: grabbing;
+}
+
+
+.movies {
+  border: 1px solid whitesmoke;
+  border-radius: 16px;
+  margin: 10px;
+  padding: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  text-align: center;
+  height: 500px;
+
 }
 
-.App-link {
-  color: #61dafb;
+.movies img {
+  height: 70%;
+  margin-bottom: 15px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.movies h3 {
+  font-size: 1rem;
+}
+
+.movies button {
+  transition: all 0.2s;
+  background-color:#FFFFFF;
+  box-shadow: 10px 0 30px 1px rgba(0, 0, 0, 0.52);
+}
+
+.movies button:hover,
+.movies button:focus {
+  color: whitesmoke;
+  background-color: green;
+}
+
+
+button:disabled {
+  background-color: grey;
+  color: darkgrey;
+
+}
+
+button:disabled:hover,
+button:disabled:hover {
+  background-color: grey;
+  color: darkgrey;
+
+}
+
+@media (max-width: 540px) {
+
+  input {
+  width: 90%;
+  margin: 10px;
   }
-  to {
-    transform: rotate(360deg);
+
+  label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .movies-list {
+  height: 450px
+  }
+
+  .movies {
+    height: 400px;
+  }
+
+  button.search{
+
+    width: 90%;
+    margin: 10px;
   }
 }
