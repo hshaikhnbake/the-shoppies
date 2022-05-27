@@ -8,7 +8,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <title>The Shoppies - Haris Shaikh</title>
+        <title>Nominate Movies</title>
         <Header />
         <SearchBar />
       </div>
